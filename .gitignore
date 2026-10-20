@@ -1,0 +1,45 @@
+# ── credentials / local state (NEVER commit) ─────────────────────────
+.env
+.env.*
+*.pem
+*.key
+cookies*.json
+session*.json
+settings.local.json
+config/rules.local.json
+
+# ── audit data / outputs ─────────────────────────────────────────────
+PO*/
+验收*/
+原始表*
+*原始.xlsx
+*-AI审核结果-*.xlsx
+验收审核底表模板*.xlsx
+截图证据清单.xlsx
+AI审核底档-*
+audit_state.json
+audit_runlog.jsonl
+work_rows.json
+diffs.json
+ocr_results*.json
+link_results.json
+adjudication.json
+链接复核/
+粉丝核验/
+补图核销/
+补图*/
+截图/
+
+# ── caches / environments ────────────────────────────────────────────
+.cache/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+/tmp/
+*.log
+
+# ── editors / OS ─────────────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store

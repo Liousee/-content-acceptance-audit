@@ -1,0 +1,37 @@
+{
+  "_comment": "示例档位，仅用于演示。复制为 config/rules.local.json 后按你的项目修改（rules.local.json 已在 .gitignore 中）。金额单位：元；互动率用小数（0.005 = 0.5%）；完播率用百分数（5 = 5%）。",
+  "tiers": {
+    "base100": {
+      "label": "基础激励档（链接可打开 + 时长≥15秒）"
+    },
+    "base": {
+      "play": 10000,
+      "interact": 0.005,
+      "finish": 5,
+      "label": "基础档（播放≥10000，互动率≥0.5%，完播率≥5%）"
+    },
+    "good": {
+      "play": 50000,
+      "interact": 0.005,
+      "finish": 8,
+      "label": "优质档（播放≥50000，互动率≥0.5%，完播率≥8%）"
+    },
+    "hot": {
+      "play": 1000000,
+      "interact": 0.001,
+      "finish": 20,
+      "label": "爆款档（播放≥1000000，互动率≥0.1%，完播率≥20%）"
+    }
+  },
+  "incentive_tiers": {
+    "100": "base100",
+    "300": "base",
+    "500": "good",
+    "1000": "hot"
+  },
+  "fee_tiers": {
+    "500": "base",
+    "1000": "good",
+    "1500": "hot"
+  }
+}
